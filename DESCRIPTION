@@ -1,7 +1,7 @@
 Package: fhpredict
 Title: R Package for the Project Flusshygiene
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     c(person(given = "Hauke",
              family = "Sonnenberg",
              role = c("aut", "cre"),
@@ -13,10 +13,10 @@ Description: This R package provides all functions that are
     required for the Web application that is developed within the
     Flusshygiene project.
 License: MIT + file LICENSE
-URL: https://github.com/KWB-R/fhpredict
-BugReports: https://github.com/KWB-R/fhpredict/issues
+URL: https://github.com/technologiestiftung/fhpredict
+BugReports: https://github.com/technologiestiftung/fhpredict/issues
 Encoding: UTF-8
 LazyData: true
-Suggests: 
+Suggests:
     covr
 RoxygenNote: 6.1.1
