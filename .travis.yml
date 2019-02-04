@@ -1,0 +1,45 @@
+# docs can be found here
+# https://docs.travis-ci.com/user/languages/r/
+language: r
+cache: packages
+sudo: required
+env:
+  - TRAVIS_R_VERSION=3.5.2
+
+r_packages:
+  - devtools
+r_github_packages:
+  - r-lib/covr
+r:
+  - release
+  # -
+# addons:
+#   apt:
+#     packages:
+#       - libxml2-dev
+
+before_install:
+  - echo "before install script"
+
+# exit 0 makes the test pass
+script:
+  - echo $TRAVIS_R_VERSION
+  - exit 0
+
+
+after_success:
+- echo "success"
+
+after_failure:
+- echo "failure"
+
+# packrat settings
+# cache:
+#   directories:
+#     - $TRAVIS_BUILD_DIR/packrat/src
+#     - $TRAVIS_BUILD_DIR/packrat/lib
+#   packages: true
+
+# install:
+#   - R -e "0" --args --bootstrap-packrat
+#   - R -e "packrat::restore(restart = FALSE)"
