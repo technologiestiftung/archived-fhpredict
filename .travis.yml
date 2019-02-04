@@ -18,8 +18,9 @@ r:
 #     packages:
 #       - libxml2-dev
 
-before_install:
-  - echo "before install script"
+# before_install:
+#   - echo "before install script"
+# No DESCRIPTION file found, user must supply their own install and script steps
 
 # exit 0 makes the test pass
 script:
