@@ -10,7 +10,7 @@ io <- function () {
   close(con)
   Sys.sleep(0.5)
 
-  toJSON(fromJSON(lines), auto_unbox = TRUE)
+  jsonlite::toJSON(jsonlite::fromJSON(lines), auto_unbox = TRUE)
 }
 
 io()
