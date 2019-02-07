@@ -1,9 +1,11 @@
 #' A io function
 #'
 #' simple function to test io on stdin
+#'
+#' @export
 #' @keywords io
-#' @example
-#' io()
+#' @examples
+#' \dontrun{io()}
 io <- function () {
   con <-  file("stdin")
   lines <- readLines(con)
