@@ -12,5 +12,3 @@ io <- function () {
 
   jsonlite::toJSON(jsonlite::fromJSON(lines), auto_unbox = TRUE)
 }
-
-io()
