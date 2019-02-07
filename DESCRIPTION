@@ -21,4 +21,4 @@ Suggests:
     covr
 RoxygenNote: 6.1.1
 Imports:
-    jsonlite (>=1.6)
+    jsonlite (>= 1.6)
