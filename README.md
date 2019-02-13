@@ -22,3 +22,15 @@ remotes::install_github("technologiestiftung/fhpredict")
 Release: [https://technologiestiftung.github.io/fhpredict](https://technologiestiftung.github.io/fhpredict)
 
 Development: [https://technologiestiftung.github.io/fhpredict/dev](https://technologiestiftung.github.io/fhpredict/dev)
+
+## Development Notes
+
+For MacOS to install `roxygen2` and be able to create documentation we need `libxml2`. Install it using homebrew. `brew install libxml2`. 
+
+For Fishshell there needs to be some additional config in `~/.config/fish/config.fish`. See the output of brew
+
+Run:  
+
+```bash
+set -g fish_user_paths "/usr/local/opt/libxml2/bin" $fish_user_paths
+```
