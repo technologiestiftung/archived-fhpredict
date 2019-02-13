@@ -1,7 +1,7 @@
 #' A io function
 #'
 #' simple function to test io on stdin
-#'
+#' @param str A JSON string (optional)
 #' @export
 #' @keywords simple
 #' @examples

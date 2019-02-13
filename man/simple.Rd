@@ -6,6 +6,9 @@
 \usage{
 simple(str = "{\\"foo\\":\\"bah\\"}")
 }
+\arguments{
+\item{str}{A JSON string (optional)}
+}
 \description{
 simple function to test io on stdin
 }
